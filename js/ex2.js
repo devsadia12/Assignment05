@@ -25,3 +25,9 @@ console.log(shoppingList);
 shoppingList.unshift("Chocolate");
 console.log(shoppingList);
 
+var shoppingList = ["Milk", "Butter", "Juice", "Bread", "Beer", "Rice", "Potatoes", "Chocolate"];
+shoppingList [8] = "Cheese";
+shoppingList [9] = "Eggs";
+console.log(shoppingList);
+
+
