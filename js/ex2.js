@@ -45,7 +45,25 @@ document.getElementById("fahr_3").innerHTML = calcAverage(-1);
 //console.log(calcAverage(24));
 //console.log(calcAverage(-1));
 
+var course = {
+        'title': "Learn to Code in Python 3",
+        'categories': ['programming', 'technology', 'python'],
+        '5_stars_reviews': 420,
+        '4_stars_reviews': 80,
+        '3_stars_reviews': 33,
+        '2_stars_reviews': 20,
+        '1_stars_reviews': 4
+    }
+function get_Total_reviews () {
+var total = course['5_stars_reviews'] + course['4_stars_reviews'] + course['3_stars_reviews'] + course['2_stars_reviews'] + course['1_stars_reviews'] ;
+return total
+} 
+//console.log(get_Total_reviews ());
 
-
-
-
+function get_Percentage () {
+    var average = get_Total_reviews(); 
+    var percentage = (course['5_stars_reviews'] / average) * 100;
+    return Math.round(percentage) + "%";
+}
+//console.log(get_Percentage ());
+document.getElementById("reviews_5_stars").innerHTML = get_Percentage();
