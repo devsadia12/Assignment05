@@ -31,3 +31,21 @@ shoppingList [9] = "Eggs";
 console.log(shoppingList);
 
 
+//The formula for the conversion is: F = (9 * C / 5) + 32
+
+//"38", "24", "-1"
+function calcAverage (C){
+    var average = (9 * C / 5) + 32
+    return average
+}
+document.getElementById("fahr_1").innerHTML = calcAverage(38);
+document.getElementById("fahr_2").innerHTML = calcAverage(24);
+document.getElementById("fahr_3").innerHTML = calcAverage(-1);
+//console.log(calcAverage(38));
+//console.log(calcAverage(24));
+//console.log(calcAverage(-1));
+
+
+
+
+
