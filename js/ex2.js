@@ -19,5 +19,7 @@
                 
     //console.log(course.title);
     document.getElementById("course_title").innerHTML = course.title;
-    
+//console.log(course.categories[0]);
+
+document.getElementById("main_category").innerHTML = course.categories[0];
     
