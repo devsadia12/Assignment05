@@ -1,9 +1,4 @@
-
-
-
-
-
- var classification = [ "John Hill" , "Mary Jane", "Gary Vee", "Paricia Mills", "Helen Hall", "Paul Green" ];
+var classification = [ "John Hill" , "Mary Jane", "Gary Vee", "Paricia Mills", "Helen Hall", "Paul Green" ];
  var bestThree = classification.slice(-3);
   document.getElementById("best_students").innerHTML = bestThree;
 
@@ -23,3 +18,10 @@
 
 document.getElementById("main_category").innerHTML = course.categories[0];
     
+    var shoppingList = ["Milk", "Butter", "Juice", "Bread", "Beer", "Rice", "Potatoes", "Chocolate"]; 
+shoppingList.pop();
+console.log(shoppingList);
+
+shoppingList.unshift("Chocolate");
+console.log(shoppingList);
+
